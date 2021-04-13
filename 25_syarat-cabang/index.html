@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap {
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+		// If dan Else
+		// Operator Logika == != === !=== > < >= <=
+		// dan && .... atau ||
+		// && kedua syaratnya harus terpenuhi
+		// || salah satu syaratnya terpenuhi
+
+		// nested if
+
+		var programmer   	= 250000;
+		var designer 		= 25000;
+		var barang 			= 25000;
+
+		if (programmer > barang) {
+			alert('Uang anda cukup');
+			if (programmer > barang * 2) {
+				alert('Uang bisa membeli 2 barang');
+			}
+		}
+		else {
+			alert('Uang hanya bisa 1 barang');
+		}
+
+	</script>
+</body>
+</html>

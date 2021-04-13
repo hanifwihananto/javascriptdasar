@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap{
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+
+		//--- METODE STRING ---//
+		// length indexOf LastIndexOf search charAt
+		// toUpperCase() toLowerCase() replace
+		// substring(start, end), substr(start, length)
+		// parseInt parseFloat
+
+		var nama = "Hilman Rami Ramadhan";
+		var nama = "120";
+		var nama = "120.50";
+
+		var hasil = nama.substring(0, 6); // Memunculkan String yang di pilih [angka akhir tidak akan muncul]
+		var hasil = nama.substr(2, 5); // Memunculkan String yang di pilih [angka akhir menentukan panjang string]
+
+		var hasil = parseInt(nama) + 10; // Merubah string menjadi Integer
+		var hasil = parseFloat(nama) + 10; // Merubah string menjadi Float
+		
+		/*
+		1. Memilih Id wrap 
+		2. Metode innerHTML = Nulis Konten
+		*/
+		
+		document.getElementById("wrap").innerHTML = hasil;
+	</script>
+
+
+</body>
+</html>

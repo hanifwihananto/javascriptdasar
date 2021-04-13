@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap {
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+		// If dan Else
+		// Operator Logika == != === !=== > < >= <=
+
+		var uang   = 2500;
+		var barang = 10000;
+
+		if (uang == barang) {
+			document.getElementById("wrap").innerHTML = "Transaksi Berhasil";
+		} 
+		else if (uang > barang) {
+				var kembali = uang - barang;
+				document.getElementById("wrap").innerHTML = "Uang Anda Kelebihan, Ini kembaliannya " + kembali;
+
+			}
+		else if (uang < barang) {
+			var kurang = uang - barang;
+			document.getElementById("wrap").innerHTML = "Uang Anda Kurang " + kurang;
+		}
+		else {
+			alert('Transaksi Anda Gagal');
+			// document.getElementById("wrap").innerHTML = "Transaksi Gagal";	
+		}
+
+
+	</script>
+</body>
+</html>

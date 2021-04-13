@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap {
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+	
+		// (4) Scope di JavaScript
+		// Global var & Local var
+
+		// ===== Global Var ===== //
+		var text = "Sekolah Koding";
+		document.getElementById("wrap").innerHTML = text;
+
+		// Local Var
+		function printText() {
+			// ===== Local Var ===== //
+			var text2 = "Situs Lain";
+
+			// Global Var [tidak disertakan var]
+			text2 = "Situs Baru";
+		}
+
+		printText()
+		document.getElementById("wrap").innerHTML = text;
+
+		// ===== EXAMPLE ===== //
+		var text = "Situs Lama";
+
+		function printText() {
+			text = "Situs Baru";
+		}
+
+		printText() // [Fungsi yang akan ditampilkan]
+		document.getElementById("wrap").innerHTML = text;
+
+
+	</script>
+</body>
+</html>
