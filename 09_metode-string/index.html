@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap{
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+
+		//--- METODE STRING ---//
+		// length indexOf LastIndexOf search charAt
+		// toUpperCase() toLowerCase() replace
+		// substring(start, end), substr(start, length)
+		// parseInt parseFloat
+
+		var nama = "Hilman Rami Ramadhan";
+
+		var hasil = nama.length; // Menghitung jumlah huruf pada kata atau kalimat [spasi ikut terhitung]
+		
+		var hasil = nama.indexOf("n");// mencari dimana huruf itu berada mengutamakan bagian awal dengan awalan 0 [0,1,2,3]
+		
+		var hasil = nama.lastindexOf("n");// mencari dimana huruf itu berada mengutamakan bagian akhir dengan awalan 0 [0,1,2,3]
+		
+		var hasil = nama.search("dhan");// mencari dimana huruf itu berada mengutamakan bagian awal dengan awalan 0 [0,1,2,3] lebih daripada indexOf
+		
+		var hasil = nama.charAt("1");// mencari dimana huruf itu berada dengan menggunakan angka awalan 0 [0,1,2,3]
+		
+		var hasil = nama.toUpperCase();// Mengubah semua menjadi huruf Kapital
+		
+		var hasil = nama.toLowerCase();// Mengubah semua menjadi huruf Kecil
+		
+		var hasil = nama.replace("Rama","Rami");// Mengubah kata atau kalimat
+
+		var hasil = nama.substring(0, 6); 
+
+	
+		/*
+		1. Memilih Id wrap 
+		2. Metode innerHTML = Nulis Konten
+		*/
+		
+		document.getElementById("wrap").innerHTML = hasil;
+	</script>
+
+
+</body>
+</html>

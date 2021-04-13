@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap {
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+		// Metode Array
+		// sort(), reverse(), concat(), length, join("separator" [Pemisah]) 
+
+		var nama  = ["Hanif", "Wihananto", "Kharin", "Nova"];
+		var nama1 = ["Abid", "Ledya"];
+		var nama2 = ["Muhammad", "Rezkirana"];
+
+		// sort() untuk mengurutkan sesuai abjad
+		document.getElementById("wrap").innerHTML = nama.sort();
+
+		// reverse() untuk mengurutkan dari belakang sesuai default array
+		document.getElementById("wrap").innerHTML = nama.reverse();
+
+		// concat() untuk menggabungkan beberapa array
+		var total = nama.concat(nama1, nama2);
+		document.getElementById("wrap").innerHTML = total;
+
+		// join("") untuk pemisah antara array => | ; | >  
+		document.getElementById("wrap").innerHTML = total.join(" | ");
+
+
+	</script>
+</body>
+</html>

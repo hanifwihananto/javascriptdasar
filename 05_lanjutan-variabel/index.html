@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap{
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+
+		//Deklarasi Varibel
+		/*
+		1. Nama dimulai dengan huruf atau $ atau _
+		2. Nama boleh mengandung huruf, angka, _ underscrore, dan $ dollar
+		3. Nama itu case sensitive (Huruf Kapital)
+		4. Ada 'reserved word' yang tidak boleh dipakai
+		*/
+		var tabungan = 10;
+		var Tabungan = 100;
+
+		//Tipe data string
+		var text  = "Sekolah Koding";
+		var text2 = " yang baru";
+		 
+		//Merubah Isi varibel
+		text2 = " yang lama"
+
+		//Tipe data angka
+		var angka  = 1000;
+		var angka2 = 123;
+
+		var angka_baru = angka + angka2;
+
+		/*
+		1. Memilih Id wrap 
+		2. Metode innerHTML = Nulis Konten
+		*/
+		
+		document.getElementById("wrap").innerHTML = angka_baru;
+	</script>
+
+
+</body>
+</html>

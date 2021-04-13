@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap{
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+
+		//Tipe data angka
+		var angka  = 1000;
+		var angka2 = 123;
+
+		
+		//Operator matematika + - * / %
+		var angka_baru = angka + angka2;
+		angka_baru++; //Increment [menjumlahkan dengan 1]
+		angka--; //Decrement [mengurangi dengan 1]
+
+		angka2 = angka2 + angka; 
+		angka2 += angka; //Penulisan singkat
+		
+
+		/*
+		1. Memilih Id wrap 
+		2. Metode innerHTML = Nulis Konten
+		*/
+		
+		document.getElementById("wrap").innerHTML = angka_baru;
+	</script>
+
+
+</body>
+</html>

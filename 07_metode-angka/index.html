@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap{
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+
+		//Tipe data angka
+		var angka  = 1000;
+		var angka2 = 4550;
+
+		
+		//Operator matematika + - * / %
+		//var angka_baru = angka + angka2;
+		//angka_baru++; //Increment [menjumlahkan dengan 1]
+		//angka--; //Decrement [mengurangi dengan 1]
+
+		// angka2 = angka2 + angka;
+		// angka2 += angka; //Penulisan singkat
+
+		//---- Metode Number ---- //
+		// toFixed(n) toString() Math.random() Math.min(a, b, c) Math.max(a, b, c)
+		var angka_baru = angka2.toFixed(2); //Menetapkan angka dibelakang koma
+		var angka_baru = angka2.toString(); //Mengubah variabel angka ke variabel String
+		var angka_baru = Math.random(); //Menampilkan angka random antara 0 - 1
+		var angka_baru = Math.min(angka, 1, 5, 8); // Mencari angka terkecil
+		var angka_baru = Math.max(angka, 1, 5, 8); // Mencari angka terbesar
+
+ 
+
+		/*
+		1. Memilih Id wrap 
+		2. Metode innerHTML = Nulis Konten
+		*/
+		
+		document.getElementById("wrap").innerHTML = angka_baru;
+	</script>
+
+
+</body>
+</html>

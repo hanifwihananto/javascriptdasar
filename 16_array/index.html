@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap {
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+		
+		// Tipe data Array
+		// Array dimulai dari angka 0
+		var kotak = ["Hanif", "Kharin", "Nova", 16, 17];
+		var nama1 = "Nama saya, " + kotak[0] + "<br>" + "Saya berumur " + kotak[4];
+		var nama2 = "Nama saya, " + kotak[1] + "<br>" + "Saya berumur " + kotak[3];
+
+		// Mengubah Array
+		kotak[2] = "Wihananto";
+		
+		document.getElementById("wrap").innerHTML = kotak[2];
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar JavaScript</title>
+
+	<style>
+		#wrap {
+			background: black;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="wrap"></div>
+
+	<script>
+		// Metode Array
+		// splice -> add (mulai, elemen yang ingin dihapus, isi), splice -> remove
+		// pop, push, shift(), unshift()
+
+		var nama = ["Muhammad", "Hanif", "Abid", "Wihananto"];
+
+		// splice -> add  untuk mengganti array
+		nama.splice(2,0, "Kharin");
+		document.getElementById("wrap").innerHTML = nama;
+
+		// splice -> add  untuk menghapus array
+		nama.splice(2,0);
+		document.getElementById("wrap").innerHTML = nama;		
+
+		// pop  untuk menghapus atau mengambil elemen bagian akhir
+		nama.pop();
+		document.getElementById("wrap").innerHTML = nama;
+
+		// push  untuk menambahkan elemen pada bagian akhir
+		nama.push("Nova");
+		document.getElementById("wrap").innerHTML = nama;
+
+		// shift  untuk menghapus elemen pada bagian awal
+		nama.shift();
+		document.getElementById("wrap").innerHTML = nama;
+
+		// unshift  untuk menambahkan elemen pada bagian awal
+		nama.unshift("Ledya");
+		document.getElementById("wrap").innerHTML = nama;
+
+	</script>
+</body>
+</html>
